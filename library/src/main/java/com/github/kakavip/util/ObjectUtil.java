@@ -15,7 +15,7 @@ public class ObjectUtil {
      * @return true if the arguments are equal to each other and false otherwise.
      */
     public static boolean equals(Object a, Object b) {
-        return a == b;
+        return (a == b) || (a != null && a.equals(b));
     }
 
     /**
